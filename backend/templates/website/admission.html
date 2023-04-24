@@ -1,8 +1,61 @@
 {% extends 'website/base.html' %}
+{% load static %}
 {% block title %}
 Admission Page
 {% endblock title %}
 
+{% block header %}
+{% include 'website/partials/navbar.html' %}
+{% endblock header %}
+
+
 {% block content %}
-This is admission page!
+<link rel="stylesheet" href="{% static 'css/custom/admission.css' %}">
+<div class="sc-header"></div>
+
+<div class="sc-hero">
+    Admission
+</div>
+<div class="sc-container">
+    <div class="sc-box">
+        <div class="sc-logoS">
+            <img src="{% static 'imgs/megaphone.svg' %}" alt="logo">
+        </div>
+        <div class="sc-noticeBar">
+            <marquee class="sc-noticeText" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, est.</marquee>
+        </div>
+    </div>
+    <div class="sc-conditions">
+        <div class="sc-title"><u> <strong>Criteria for Admission :</strong></u></div>
+        <br>
+        <div class="sc-terms" >
+        <ol>
+            <li class="sc-criteria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae sequi consectetur! Quaerat maxime quisquam architecto inventore eius. Unde, laborum.</li>
+            <br>
+
+            <li class="sc-criteria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, recusandae numquam? Ex temporibus excepturi ipsa possimus unde! Vitae atque ex ipsa numquam eum nobis. Nihil iusto quae in dolorem! Necessitatibus.
+            </li>
+            <br>
+            <li class="sc-criteria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi aut.</li>
+            <br>
+            <li class="sc-criteria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi aut.</li>
+            <br>
+            <li class="sc-criteria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi aut Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis architecto ad tempore enim expedita nobis quis quasi aspernatur quae?</li>
+         
+        </ol>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+
+
+
+
 {% endblock content %}
+
+{% block footer %}
+   {% include "website/partials/footer.html" %} 
+{% endblock footer %} 
