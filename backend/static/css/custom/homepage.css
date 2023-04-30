@@ -1,3 +1,7 @@
+body {
+    background-color: #ffffff9d;
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -75,4 +79,37 @@
     100% {
         opacity: 0;
     }
+}
+
+
+#principle-tagline {
+    display: block;
+}
+
+.image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.sh-principle-image {
+    border-radius: 20px;
+}
+
+.sh-section {
+    width: 100%;
+    height: 42vh;
+    /* border: 2px solid black; */
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #eae7e7;
+    margin-left: -100px;
+}
+
+.sh-margin {
+    height: 50vh;
 }
