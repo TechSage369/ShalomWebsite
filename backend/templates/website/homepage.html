@@ -1,24 +1,20 @@
 {% extends 'website/base.html' %}
-
 {% block title %}
-Shalom English School
+    Shalom English School
 {% endblock title %}
-
 {% block header %}
-{% include 'website/partials/navbar.html' %}
+    {% include 'website/partials/navbar.html' %}
 {% endblock header %}
-
 {% block content %}
-<!-- Tagline Welcome and read more -->
-
-<div class="section container">{% include 'website/partials/tagline.html' %}</div>
-
-<!-- Carousel Section for images -->
-{% include 'website/partials/carousel.html' %}
-
-<!-- Principle Say -->
-<!-- Events list -->
-<!-- Blog Section -->
-<!-- Segway to Gallery -->
+    <!-- Carousel Section for images -->
+    {% include 'website/partials/carousel.html' %}
+    <!-- Tagline Welcome and read more -->
+    <div class="section container">{% include 'website/partials/tagline.html' %}</div>
+    <!-- Principle Say -->
+    <div class="section container sh-margin">{% include 'website/partials/principle-say.html' %}</div>
+    <!-- Events list -->
+    <!-- Blog Section -->
+    <!-- Segway to Gallery -->
+    <!--Footer-->
+    <div class="my-5">{% include 'website/partials/footer.html' %}</div>
 {% endblock content %}
-
