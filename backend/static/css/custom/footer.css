@@ -1,56 +1,56 @@
 /* CSS for footer */
 .sc-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
+    background-color: rgb(41, 41, 41);
     color: #fff;
-    padding: 30px;
-    }
-.sc-footerBar{
-    background-color: #333;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 300px;
 }
-    .sc-cnt {
+
+.sc-cnt {
     flex: 1;
     margin: 10px;
-    }
-    
-    .sc-cnt ul {
+}
+
+.sc-cnt ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
-    
-    .sc-cnt li {
+}
+
+.sc-cnt li {
     margin-bottom: 10px;
-    }
-    
-    .sc-cnt strong {
+}
+
+.sc-cnt strong {
     font-size: 20px;
-    }
-    
-    .sc-map {
+}
+
+.sc-map {
     width: 100%;
     height: 200px;
-    }
-    
-    .sc-footerBar {
+}
+
+.sc-footerBar {
     text-align: center;
     color: #fff;
-    }
-    
-    /* Media queries */
-    @media (min-width: 768px) {
+}
+
+/* Media queries */
+@media (min-width: 768px) {
     .sc-footer {
-    justify-content: space-between;
+        justify-content: space-between;
     }
-    
+
     .sc-cnt {
-    flex: 0 1 25%;
+        flex: 0 1 25%;
     }
-    
+
     .sc-map {
-    height: 300px;
+        height: 300px;
     }
-    }
+}
