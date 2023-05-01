@@ -1,1 +1,65 @@
-gallery page
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}
+    Gallery
+{% endblock title %}
+{% block header %}
+    {% include 'website/partials/navbar.html' %}
+{% endblock header %}
+{% block content %}
+    <div class="container">
+        <h1 class="my-3">Gallery</h1>
+        <div class="row my-4">
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/1.jpg' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/2.JPG' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/3.JPG' %}"
+                     alt="">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/4.JPG' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/5.JPG' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/13.JPG' %}"
+                     alt="">
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/7.JPG' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/8.JPG' %}"
+                     alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid rounded"
+                     src="{% static 'imgs/gallery/9.JPG' %}"
+                     alt="">
+            </div>
+        </div>
+    </div>
+    {% include 'website/partials/footer.html' %}
+{% endblock content %}
