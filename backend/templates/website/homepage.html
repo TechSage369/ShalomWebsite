@@ -7,14 +7,18 @@
 {% endblock header %}
 {% block content %}
     <!-- Carousel Section for images -->
+    <div style="padding: -20px;">
     {% include 'website/partials/carousel.html' %}
-    <!-- Tagline Welcome and read more -->
-    <div class="section container">{% include 'website/partials/tagline.html' %}</div>
+</div>
+      <!-- Tagline Welcome and read more -->
+    <div class="section container" >{% include 'website/partials/tagline.html' %}</div>
     <!-- Principle Say -->
-    <div class="section container sh-margin">{% include 'website/partials/principle-say.html' %}</div>
+    <div class="section container sh-margin" style="margin-top: 200px;">{% include 'website/partials/principle-say.html' %}</div>
     <!-- Events list -->
     <!-- Blog Section -->
     <!-- Segway to Gallery -->
     <!--Footer-->
+    <div style="margin-top: 200px;">
     {% include 'website/partials/footer.html' %}
+    </div>
 {% endblock content %}
