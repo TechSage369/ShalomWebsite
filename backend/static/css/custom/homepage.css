@@ -12,20 +12,6 @@ body {
     padding: 50px 0px;
 }
 
-/* .sh-bg-image {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hibbing_High_School_2014.jpg/1200px-Hibbing_High_School_2014.jpg');
-    background-size: cover;
-    width:1200px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    filter: blur(0.1px);
-    object-fit: fit;
-
-} */
-
 .sh-tg-color {
     font-size: 64px;
     font-weight: 900;

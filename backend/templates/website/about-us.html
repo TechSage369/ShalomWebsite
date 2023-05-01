@@ -1,10 +1,10 @@
 {% extends 'website/base.html' %}
 {% block title %}
-About Us
+    About Us
 {% endblock title %}
-
+{% block header %}
+    {% include 'website/partials/navbar.html' %}
+{% endblock header %}
 {% block content %}
-<div class="container">
-    About Us page
-</div>
+    <div class="container">About Us page</div>
 {% endblock content %}
