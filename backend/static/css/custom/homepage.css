@@ -2,18 +2,6 @@ body {
     background-color: #ffffff9d;
 }
 
-.section {
-
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 100%; */
-    /* height: 30rem; */
-    /* padding: 50px 0px; */
-
-    /* align-items: center; */
-}
-
 
 .sh-tg-color {
     font-size: 5rem;
@@ -73,39 +61,7 @@ body {
 }
 
 
-#principle-tagline {
-    display: block;
-}
 
-.image-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin: 0px 200px;
-}
-
-.sh-principle-image {
-    border-radius: 20px;
-}
-
-.sh-section {
-    width: 100%;
-    height: 42vh;
-    /* border: 2px solid black; */
-    font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px #eae7e7;
-    margin-left: -300px;
-}
-
-.sh-margin {
-    height: 50vh;
-}
 
 @media (max-width: 1200px){
     .sh-tg-color {
@@ -136,5 +92,59 @@ body {
     
     #feature-text {
         font-size: 1rem;
+    }
+}
+
+.principle-image {
+    border-radius: 20px;
+    width: 30rem;
+}
+.principal-container{
+    position: relative;
+    z-index: 0;
+}
+.principal-section-heading{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.text-container{
+    position: relative;
+    padding: 10px;
+    margin-left: 20rem;
+    margin-top: -10rem;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+@media (max-width: 1000px){
+
+    .text-container{
+        margin-left: 10rem;
+        margin-top: -10rem;
+        z-index: 2;
+    }
+}
+@media (max-width:774px){
+    .principal-container{
+       text-align: center;
+    }
+    .principle-image {
+        width: 20rem;
+    }
+    .principle-image {
+        border-radius: 20px;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .text-container{
+        width: 100%;
+        position: relative;
+        margin: 0;
+        background-color: #fff;
+        border: 2px solid black;
+        border-radius: 20px;
+        z-index: 2;
     }
 }
