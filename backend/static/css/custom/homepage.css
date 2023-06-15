@@ -69,6 +69,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 500px) {
     .sh-tg-color {
         font-size: 2rem;
@@ -81,6 +82,15 @@ body {
     #feature-text {
         font-size: 1.2rem;
     }
+=======
+.image-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0px 200px;
+>>>>>>> 0dea62e ([fix] add image)
 }
 
 @media (max-width: 310px) {
@@ -120,7 +130,12 @@ body {
     background-color: #fff;
     border: 2px solid black;
     border-radius: 20px;
+<<<<<<< HEAD
     z-index: 2;
+=======
+    box-shadow: 2px 2px 5px #eae7e7;
+    margin-left: -300px;
+>>>>>>> 0dea62e ([fix] add image)
 }
 
 @media (max-width: 1000px) {
