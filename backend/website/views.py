@@ -49,3 +49,7 @@ def fee_structure_view(request):
 
 def gallery_view(request):
     return render(request, 'website/gallery.html')
+
+
+def principle_letter(request):
+    return render(request, 'website/principle-letter.html')
