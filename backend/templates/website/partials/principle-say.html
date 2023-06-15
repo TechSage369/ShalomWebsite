@@ -1,4 +1,9 @@
 {% load static %}
+<style>
+a {
+    text-decoration: none;
+}
+</style>
 <div class="image-block">
     <img class="img-fluid mx-auto d-block sh-principle-image"
          src="{% static 'imgs/gallery/principle-demo.jpeg' %}"
@@ -10,6 +15,8 @@
             <h1>Meet our Principle</h1>
         </span>
     </div>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat neque quod atque. Pariatur eveniet fugit nostrum dolore repudiandae. Aliquid molestias iusto perferendis ipsam recusandae consectetur quia! Labore eos deserunt ex nisi eum suscipit sint.
-    <button class="btn-primary rounded px-2 my-3">Read More</button>
+    <p>
+    Education is a broader concept than merely knowledge and understanding. The one who is skilled in all these areas will succeed in the world we have created today. It is a harmonious blend of academics, the arts, sports, emotions, attitudes, creativity, nature and life itself...
+    </p>
+    <a href="{% url 'website:principle_letter' %}" class="btn-primary rounded px-3 py-2 my-3">Read More</a>
 </div>

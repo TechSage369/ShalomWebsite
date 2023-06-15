@@ -8,5 +8,6 @@ urlpatterns = [
     path('feedback-form', views.feedback_handler, name="feedback_form"),
     path('admission', views.admission_view, name="admission"),
     path('fee-structure', views.fee_structure_view, name='fee_structure'),
-    path('gallery', views.gallery_view, name='gallery')
+    path('gallery', views.gallery_view, name='gallery'),
+    path('principle-letter', views.principle_letter, name='principle_letter')
 ]
