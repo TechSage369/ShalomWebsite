@@ -46,6 +46,9 @@ def feedback_handler(request):
                     "form": FeedbackForm,
                     "message": "Thankyou for giving us your feedback!"
                     }
+                "form": FeedbackForm,
+                "message": "Thankyou for giving us your feedback!"
+            }
             return render(request, "website/about-us.html", context)
         else:
             context = {
@@ -53,6 +56,9 @@ def feedback_handler(request):
                     "form": FeedbackForm
                     }
 >>>>>>> 09b208b (feat: add feedback model and feedback form in about us page also create about us page)
+                "message": "Form is Invalid",
+                "form": FeedbackForm
+            }
             return render(request, 'website/about-us.html', context)
 
 
@@ -66,10 +72,3 @@ def fee_structure_view(request):
 
 def gallery_view(request):
     return render(request, 'website/gallery.html')
-<<<<<<< HEAD
-
-
-def principle_letter(request):
-    return render(request, 'website/principle-letter.html')
-=======
->>>>>>> 09b208b (feat: add feedback model and feedback form in about us page also create about us page)
