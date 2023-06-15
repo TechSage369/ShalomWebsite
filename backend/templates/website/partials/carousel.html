@@ -1,14 +1,8 @@
 {% load static %}
-<style>
-  /* adjust the width of the carousel container */
-  #carouselExampleControls {
-    max-width: 800px;
-  }
-
-</style>
-<div class="container-fluid m-auto">
+{% include 'website/base_partials/bootstrap-include.html' %}
+<div class="container-fluid mt-2">
   <div id="carouselExampleControls"
-       class="carousel slide sh-full-height mx-auto"
+       class="carousel slide sh-full-height"
        data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
