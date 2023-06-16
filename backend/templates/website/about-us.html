@@ -8,6 +8,11 @@
 {% endblock header %}
 {% block content %}
     <div class="container my-5">
+    {% if message %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+    {% endif %}
         <!-- History and Evolution -->
         <!-- Administration -->
         <!-- Vision and Mission -->

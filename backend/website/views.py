@@ -6,19 +6,15 @@ def homepage_view(request):
     return render(request, 'website/homepage.html')
 
 
+# def about_us_view(request):
+#     form = FeedbackForm
+#     context = {
+#             "form": form
+#             }
+#     return render(request, 'website/about-us.html', context)
+
+
 def about_us_view(request):
-    return render(request, 'website/about-us.html')
-
-
-def feedback_handler(request):
-    if request.method == "GET":
-        print("Function: Feedback Get")
-        form = FeedbackForm
-        context = {
-            "form": form,
-        }
-        return render(request, 'website/about-us.html', context)
-
     if request.method == "POST":
         print("Function: Feedback Post")
         form = FeedbackForm(request.POST)
@@ -37,6 +33,15 @@ def feedback_handler(request):
                 "form": FeedbackForm
             }
             return render(request, "website/about-us.html", context)
+
+        if request.method == "GET":
+            print("Function: Feedback Get")
+            form = FeedbackForm
+            context = {
+                    "form": form,
+                    }
+            return render(request, 'website/about-us.html', context)
+
 
 
 def admission_view(request):

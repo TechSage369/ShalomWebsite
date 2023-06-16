@@ -2,11 +2,6 @@
 <h1 class="my-3">Contact Us</h1>
 
 <div class="container">
-    {% if message %}
-    <div class="alert">
-        {{ message }}
-    </div>
-    {% endif %}
     <form method="post" class="form-group">
         {% csrf_token %}
         <label for="full-name">Full Name</label>
