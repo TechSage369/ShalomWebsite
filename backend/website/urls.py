@@ -10,7 +10,9 @@ urlpatterns = [
     path('annual-planner', views.annual_planner_view, name='annual_planner'),
     path('gallery', views.gallery_view, name='gallery'),
     path('principle-letter', views.principle_letter, name='principle_letter'),
-    path('rules-and-regulations', views.rules_and_regulations_view, name="rules_and_regulations"),
-    path('vision-and-mission', views.vision_and_mission_view, name="vision_and_mission"),
+    path('rules-and-regulations', views.rules_and_regulations_view,
+         name="rules_and_regulations"),
+    path('vision-and-mission', views.vision_and_mission_view,
+         name="vision_and_mission"),
     path('administration', views.administration_view, name="administration")
 ]

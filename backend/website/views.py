@@ -55,6 +55,10 @@ def vision_and_mission_view(request):
     return render(request, 'website/vision-and-mission.html')
 
 
+def admission_form(request):
+    return render(request, 'website/form.html')
+
+
 def rules_and_regulations_view(request):
     return render(request, 'website/rules-and-regulations.html')
 

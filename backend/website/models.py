@@ -1,4 +1,5 @@
 from django.db import models
+import uuid
 
 
 class FeedbackModel(models.Model):
@@ -13,7 +14,7 @@ class FeedbackModel(models.Model):
         return f"{self.fullname} => {self.feedback[:10]}"
 
 
-class FeesStructure(models.Model):
+class FeeStructure(models.Model):
     pdf_file = models.FileField(
         upload_to="Fees-structure/")
     created = models.DateField(auto_now_add=True, editable=False)
