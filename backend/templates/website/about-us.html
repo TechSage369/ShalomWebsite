@@ -1,4 +1,5 @@
 {% extends 'website/base.html' %}
+{% load static %}
 {% block title %}
     About Us
 {% endblock title %}
@@ -6,5 +7,28 @@
     {% include 'website/partials/navbar.html' %}
 {% endblock header %}
 {% block content %}
-    <div class="container">About Us page</div>
+    <div class="container my-5">
+        {% if message %}
+        <div class="alert alert-success" role="alert">
+            {{ message }}
+        </div>
+        {% endif %}
+        <!--Notice-->
+        {% include 'website/partials/notice.html' %}
+        <!--Admission Open Prospectus-->
+        {% include 'website/partials/admission-open.html' %}
+        <!--Brief History-->
+        {% include 'website/partials/brief-history.html' %}
+        <!--Rules and Regulations-->
+        {% include 'website/partials/rules-regulations-read-more.html' %}
+        <!--Vision and Mission-->
+        {% include 'website/partials/vision-and-mission-read-more.html' %}
+        <!-- Prospectus -->
+        {% include 'website/partials/prospectus.html' %}
+        <!--Administration-->
+        {% include 'website/partials/administration-read-more.html' %}
+        <!-- Contact Us -->
+        {% include 'website/partials/contact-us.html' %}
+    </div>
+    {% include 'website/partials/footer.html' %}
 {% endblock content %}

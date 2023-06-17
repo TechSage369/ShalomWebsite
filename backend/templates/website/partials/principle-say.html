@@ -1,31 +1,22 @@
 {% load static %}
-<div class="principal-container" style="margin-top: 3rem;">
-    <img class="principle-image"
+<style>
+a {
+    text-decoration: none;
+}
+</style>
+<div class="image-block">
+    <img class="img-fluid mx-auto d-block sh-principle-image"
          src="{% static 'imgs/gallery/principle-demo.jpeg' %}"
          alt="">
-    <div class="text-container">
-        <div class="text-container-header">What Out Principle Says</div>
-        <div class="readmore-container">
-            <p id="principal-container-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos culpa ipsum perspiciatis a magni, nihil, suscipit ex reiciendis vitae natus sunt reprehenderit iusto sit aut? Odio, inventore dolorem cum magnam quos perspiciatis adipisci ducimus, veritatis impedit, explicabo temporibus magni! Aut quibusdam nemo nihil in veniam optio quidem sequi ab facilis.
-                <span class="collapse" id="collapseTextSpan">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae iste! Odio recusandae ratione quos autem error exercitationem iusto quam ullam? Perspiciatis ratione totam, nulla temporibus deserunt suscipit non earum nihil adipisci explicabo! Minus similique animi enim fuga doloremque modi deleniti, beatae corrupti quod, maiores, laboriosam nostrum ipsam sed dignissimos commodi vero repellendus eos placeat earum iste itaque. Et in architecto enim nemo quisquam reiciendis, asperiores sequi repellendus pariatur consectetur natus. Numquam, error. Cum, quibusdam rem. Beatae, excepturi. Corrupti perferendis quam ea, accusantium voluptate dolor! Saepe unde odit commodi nisi blanditiis dolorem impedit, iure neque vero fuga nobis enim aliquam quasi quod perferendis eligendi dignissimos ad consectetur nemo voluptas. Consectetur labore ipsa sed amet, iste modi aut nam dolores minima, fuga laborum quod accusamus. Fuga quaerat at explicabo tenetur est porro dolores non commodi sequi voluptatem? Harum doloribus obcaecati nulla voluptas fuga fugit totam nisi eligendi expedita placeat nostrum, quas facere sit, cum, animi ipsam! Minus temporibus quis tempora ipsam, autem, iste magnam delectus deleniti cumque voluptatem voluptatum quibusdam reiciendis tempore corporis reprehenderit, laudantium hic nobis non fugit dignissimos quaerat. Placeat, saepe illum. Similique error fugit totam tempore exercitationem et minus, explicabo, ut accusamus sed aliquam iste ex porro magni.
-                </span>
-            </p>
-            <button class="btn btn-primary readmore-btn float-end"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTextSpan"
-                    aria-expanded="false"
-                    aria-controls="collapseTextSpan">Read more</button>
-            <div style="padding:1rem;"></div>
-        </div>
+</div>
+<div class="sh-section">
+    <div id="sh-principle-tagline">
+        <span>
+            <h1>Meet our Principle</h1>
+        </span>
     </div>
+    <p>
+    Education is a broader concept than merely knowledge and understanding. The one who is skilled in all these areas will succeed in the world we have created today. It is a harmonious blend of academics, the arts, sports, emotions, attitudes, creativity, nature and life itself...
+    </p>
+    <a href="{% url 'website:principle_letter' %}" class="btn-primary rounded px-3 py-2 my-3">Read More</a>
 </div>
-</div>
-<script>
-  var readmoreBtn = document.querySelector('.readmore-btn');
-  readmoreBtn.addEventListener('click', function() {
-    readmoreBtn.textContent = readmoreBtn.textContent === 'Read more' ? 'Show less' : 'Read more';
-  });
-</script>

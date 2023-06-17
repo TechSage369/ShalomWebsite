@@ -1,0 +1,14 @@
+{% load widget_tweaks %}
+<h1 class="my-3">Contact Us</h1>
+
+<div class="container">
+    <form method="post" class="form-group">
+        {% csrf_token %}
+        <label for="full-name">Full Name</label>
+        {{form.fullname|add_class:"form-control"}} 
+
+        <label class="my-3" for="feedback">Feedback</label>
+        {{form.feedback|add_class:"form-control"}}
+        <button class="btn-primary my-2 rounded" type="submit">Submit</button>
+    </form>
+</div>

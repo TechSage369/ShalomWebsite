@@ -1,0 +1,23 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}
+Fee Structure Page
+{% endblock title %}
+
+{% block header %}
+{% include 'website/partials/navbar.html' %}
+{% endblock header %}
+
+
+{% block content %}
+<div class="container">
+    <h1 class="my-3">Annual Planner</h1>
+    <iframe src="{% static 'assets/annual-planner.pdf' %}"
+        width=100%
+        height="800"></iframe>
+</div>
+{% endblock content %}
+
+{% block footer %}
+   {% include "website/partials/footer.html" %} 
+{% endblock footer %} 

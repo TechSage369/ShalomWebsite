@@ -8,18 +8,9 @@
 {% endblock header %}
 {% block content %}
     <link rel="stylesheet" href="{% static 'css/custom/admission.css' %}">
-    <div class="sc-header"></div>
     <div class="sc-hero">Admission</div>
-    <div class="sc-container">
-        <div class="sc-box">
-            <div class="sc-logoS">
-                <img src="{% static 'imgs/megaphone.svg' %}" alt="logo">
-            </div>
-            <div class="sc-noticeBar">
-                <marquee class="sc-noticeText" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, est.</marquee>
-            </div>
-        </div>
+    <div class="container">
+        {% include 'website/partials/notice.html' %}
         <div class="sc-conditions">
             <div class="sc-title">
                 <u> <strong>Criteria for Admission :</strong></u>
@@ -27,9 +18,8 @@
             <br>
             <div class="sc-terms">
                 <ol>
-                    <li class="sc-criteria">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae sequi consectetur! Quaerat maxime quisquam architecto inventore eius. Unde, laborum.
-                    </li>
+                    <h3>For Class Playgroup</h3>
+                    <li class="sc-criteria">Submission of  Registration form</li>
                     <br>
                     <li class="sc-criteria">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, odit consectetur harum velit nobis natus totam error qui animi aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, recusandae numquam? Ex temporibus excepturi ipsa possimus unde! Vitae atque ex ipsa numquam eum nobis. Nihil iusto quae in dolorem! Necessitatibus.
@@ -50,10 +40,9 @@
             </div>
         </div>
     </div>
-</div>
-<a class="nav-link" href="{% url 'website:admission-form' %}">
-    <button>Apply</button>
-</a>
+    <a class="nav-link" href="{% url 'website:admission-form' %}">
+        <button>Apply</button>
+    </a>
 {% endblock content %}
 {% block footer %}
     {% include "website/partials/footer.html" %}

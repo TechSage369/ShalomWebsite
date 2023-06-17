@@ -3,18 +3,23 @@
     Shalom English School
 {% endblock title %}
 {% block header %}
-    {% include 'website/partials/navbar.html' %}
+        {% include 'website/partials/navbar.html' %}
 {% endblock header %}
 {% block content %}
-    <!-- Tagline Welcome and read more -->
-    <div class="section container">{% include 'website/partials/tagline.html' %}</div>
     <!-- Carousel Section for images -->
-    {% include 'website/partials/carousel.html' %}
+    <div class="container" style="padding: -20px;">
+        {% include 'website/partials/carousel.html' %}
+        {% include 'website/partials/notice.html' %}
+    </div>
+      <!-- Tagline Welcome and read more -->
+    <div class="section container" >{% include 'website/partials/tagline.html' %}</div>
     <!-- Principle Say -->
-    <div class="section container sh-margin">{% include 'website/partials/principle-say.html' %}</div>
+    <div class="section container sh-margin" style="margin-top: 200px;">{% include 'website/partials/principle-say.html' %}</div>
     <!-- Events list -->
     <!-- Blog Section -->
     <!-- Segway to Gallery -->
-    <!-- Footer -->
+    <!--Footer-->
+    <div style="margin-top: 200px;">
     {% include 'website/partials/footer.html' %}
+    </div>
 {% endblock content %}

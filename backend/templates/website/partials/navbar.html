@@ -1,35 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-     style="margin-bottom: 2rem">
+{% load static %}
+<style>
+    .sh-logo {
+        width: 200px;
+        height: auto;
+    }
+    .sh-fn-1 {
+        font-size: 1.3rem;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+     style="box-shadow: 0 0 5px #000">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:homepage' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:about_us' %}">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:admission' %}">Admission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Facilities</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:gallery' %}">Gallery</a>
-        </li>
-      </ul>
-    </div>
+    <a class="navbar-brand" href="{% url 'website:homepage' %}">
+      <img src="{% static 'imgs/shalom-logo.png' %}" class="sh-logo">
+    </a>
+    <ul class="nav nav-tabs mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link sh-fn-1" href="{% url 'website:homepage' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link sh-fn-1" href="{% url 'website:about_us' %}">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link sh-fn-1" href="{% url 'website:admission' %}">Admission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link sh-fn-1" href="{% url 'website:annual_planner' %}">Annual Planner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link sh-fn-1" href="{% url 'website:gallery' %}">Gallery</a>
+      </li>
+    </ul>
   </div>
 </nav>
-<div style="padding: 2rem"></div>

@@ -1,0 +1,50 @@
+
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}
+    Principle Letter
+{% endblock title %}
+{% block header %}
+    {% include 'website/partials/navbar.html' %}
+{% endblock header %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm my-5">
+                <img src="{% static 'imgs/gallery/principle-demo.jpeg'%}"
+                    class="img-fluid mx-auto d-block sh-principle">
+            </div>
+            <div class="col-sm">
+                <h1 class="my-3">Message from President</h1>
+                <p>
+                Dear Friends,<br>
+                Warm Greetings to you!<br>
+                </p>
+                <p>
+                Education is a broader concept than merely knowledge and understanding. The one who is skilled in all these areas will succeed in the world we have created today. It is a harmonious blend of academics, the arts, sports, emotions, attitudes, creativity, nature and life itself.
+                </p>
+                <p>
+                Since the school's motto is <strong>"Honesty, Peace and Excellence"</strong>, it made its academic appearance in 2010 with just 23 pupils and 4 teachers; due to a lack of funding, the school was constructed on the roof of a cow shed.
+                </p>
+                <p>
+                By the grace of God Almighty, we now have well-designed, decent classrooms with enough space for students. This humble beginning, however, became enormous and reached the pinnacles of success thanks to the hardwork of our team, consistent parental support, and the passionate performance of our kids.
+                </p>
+                <p>
+                As an educator, I had a sincere desire to build an institution where education and training could coexist with all colors of human values could be given and today I feel proud to say that my dream of a quality institution is taking shape through it. Today, Shalom English School is one of the fastest growing schools of the region because of the high standards it has set for itself in providing excelent education and living up to its school motto "Honesty, Peace and Excellence".
+                </p>
+                <p>
+                I have always believed that, "Excellence is never an accident; it's always the result of high intention, sincere efforts, integlligent direction and skillful execution." These words of wisdom best describe the present state of the Shalom English School (SES).
+                </p>
+                <p>
+                I give all my blessings to the SES, to the staff, students, parents and all benevolence, continues to lead and guide this prestigious institution for generations to come.
+                </p>
+                <br><br>
+                With Prayers<br>
+                Mr. Praveen M. Titimus<br>
+                Founder & President <br>
+                Shalom English School
+                </div>
+            </div>
+        </div>
+    {% include 'website/partials/footer.html' %}
+{% endblock content %}
