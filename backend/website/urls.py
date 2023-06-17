@@ -5,9 +5,11 @@ app_name = 'website'
 urlpatterns = [
     path('', views.homepage_view, name="homepage"),
     path('about-us', views.about_us_view, name="about_us"),
-    path('feedback-form', views.feedback_handler, name="feedback_form"),
     path('admission', views.admission_view, name="admission"),
-    path('fee-structure', views.fee_structure_view, name='fee_structure'),
+    path('annual-planner', views.annual_planner_view, name='annual_planner'),
     path('gallery', views.gallery_view, name='gallery'),
-    path('principle-letter', views.principle_letter, name='principle_letter')
+    path('principle-letter', views.principle_letter, name='principle_letter'),
+    path('rules-and-regulations', views.rules_and_regulations_view, name="rules_and_regulations"),
+    path('vision-and-mission', views.vision_and_mission_view, name="vision_and_mission"),
+    path('administration', views.administration_view, name="administration")
 ]

@@ -2,48 +2,39 @@
 <link rel="stylesheet" href="{% static 'css/custom/footer.css' %}">
 <div class="sc-footer">
     <div class="sc-cnt">
-        Get in Touch
-        <br>
-        <br>
-        <strong>Shalom English School</strong>
-        <br>
-        Darjeeling West Bengal
-        <br>
-        <br>
-        +91123456789/654789321
-        <br>
-        <br>
+        Get in Touch<br>
+        8637332128<br>
+        6296153001<br>
+        8250398245<br><br>
+        <a href="https://www.facebook.com/profile.php?id=100069484714989&mibextid=ZbWKwL" class="link">Facebook</a><br>
         Email.of.school@gmail.com
     </div>
     <div class="sc-cnt">
         <ul>
-            <a href="#" class="link">
+            <a href="{% url 'website:homepage' %}" class="link">
                 <li>Home</li>
             </a>
-            <a href="#" class="link">
+            <a href="{% url 'website:about_us' %}" class="link">
                 <li>History</li>
             </a>
-            <a href="#" class="link">
+            <a href="{% url 'website:administration' %}" class="link">
                 <li>Rules & Regualtions</li>
             </a>
-            <a href="#" class="link">
+            <a href="{% url 'website:administration' %}" class="link">
                 <li>Administration</li>
             </a>
         </ul>
     </div>
     <div class="sc-cnt">
         <ul>
-            <a href="#"class="link">
+            <a href="{% url 'website:admission' %}"class="link">
                 <li>Admission</li>
             </a>
-            <a href="#"class="link">
+            <a href="{% url 'website:about_us' %}"class="link">
                 <li>About us</li>
             </a>
-            <a href="#"class="link">
-                <li>Fee Structure</li>
-            </a>
-            <a href="#"class="link">
-                <li>Academic Calender</li>
+            <a href="{% url 'website:annual_planner' %}"class="link">
+                <li>Annual Planner</li>
             </a>
         </ul>
     </div>

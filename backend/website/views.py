@@ -7,18 +7,6 @@ def homepage_view(request):
 
 
 def about_us_view(request):
-    return render(request, 'website/about-us.html')
-
-
-def feedback_handler(request):
-    if request.method == "GET":
-        print("Function: Feedback Get")
-        form = FeedbackForm
-        context = {
-            "form": form,
-        }
-        return render(request, 'website/about-us.html', context)
-
     if request.method == "POST":
         print("Function: Feedback Post")
         form = FeedbackForm(request.POST)
@@ -38,13 +26,21 @@ def feedback_handler(request):
             }
             return render(request, "website/about-us.html", context)
 
+    if request.method == "GET":
+        print("Function: Feedback Get")
+        form = FeedbackForm
+        context = {
+                "form": form,
+                }
+        return render(request, 'website/about-us.html', context)
+
 
 def admission_view(request):
     return render(request, 'website/admission.html')
 
 
-def fee_structure_view(request):
-    return render(request, 'website/fee-structure.html')
+def annual_planner_view(request):
+    return render(request, 'website/annual_planner.html')
 
 
 def gallery_view(request):
@@ -53,3 +49,15 @@ def gallery_view(request):
 
 def principle_letter(request):
     return render(request, 'website/principle-letter.html')
+
+
+def vision_and_mission_view(request):
+    return render(request, 'website/vision-and-mission.html')
+
+
+def rules_and_regulations_view(request):
+    return render(request, 'website/rules-and-regulations.html')
+
+
+def administration_view(request):
+    return render(request, 'website/administration.html')
