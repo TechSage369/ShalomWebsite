@@ -14,16 +14,8 @@ Admission Page
 <div class="sc-hero">
     Admission
 </div>
-<div class="sc-container">
-    <div class="sc-box">
-        <div class="sc-logoS">
-            <img src="{% static 'imgs/megaphone.svg' %}" alt="logo">
-        </div>
-        <div class="sc-noticeBar">
-            <marquee class="sc-noticeText" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, est.</marquee>
-        </div>
-    </div>
+<div class="container">
+    {% include 'website/partials/notice.html' %}
     <div class="sc-conditions">
         <div class="sc-title"><u> <strong>Criteria for Admission :</strong></u></div>
         <br>
