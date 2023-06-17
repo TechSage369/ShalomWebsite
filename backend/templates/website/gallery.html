@@ -7,6 +7,20 @@
     {% include 'website/partials/navbar.html' %}
 {% endblock header %}
 {% block content %}
+    <nav class="nav">
+        <a class="nav-link active ms-auto" aria-current="page" href="#">Main Gallery</a>
+        <a class="nav-link" href="#">Student Gallery</a>
+    </nav>
+    <style>
+    nav > .active{
+        text-decoration: underline;
+        background: #333;
+        color: #fff;
+    }
+    nav > .active: hover{
+        color: #ff8
+    }
+    </style>
     <div class="container">
         <h1 class="my-3">Gallery</h1>
         <div class="row my-4">

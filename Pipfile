@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 djlint = "*"
 django-pytest = "*"
+reportlab = "*"
+xhtml2pdf = "*"
 django-widget-tweaks = "*"
 
 [dev-packages]

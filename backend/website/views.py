@@ -30,8 +30,8 @@ def about_us_view(request):
         print("Function: Feedback Get")
         form = FeedbackForm
         context = {
-                "form": form,
-                }
+            "form": form,
+        }
         return render(request, 'website/about-us.html', context)
 
 
@@ -53,6 +53,10 @@ def principle_letter(request):
 
 def vision_and_mission_view(request):
     return render(request, 'website/vision-and-mission.html')
+
+
+def admission_form(request):
+    return render(request, 'website/form.html')
 
 
 def rules_and_regulations_view(request):

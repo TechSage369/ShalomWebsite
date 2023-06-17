@@ -1,0 +1,27 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}
+   Fee Structure Page
+{% endblock title %}
+{% block header %}
+   {% include 'website/partials/navbar.html' %}
+{% endblock header %}
+{% block content %}
+   <link rel="stylesheet" href="{% static 'css/custom/fee-structure.css' %}">
+   <div class="sc-hero">Fee-Structure</div>
+   <iframe src="{{ context.0.pdf_file.url }}#toolbar=0"
+           width="100%"
+           height="1000px"
+           style="border: none;
+                  background-color:#fff"
+           allowfullscreen
+           webkitallowfullscreen
+           mozallowfullscreen>
+   </iframe>
+   <style>
+    .pdfjs-viewer .toolbar {
+        display: none;
+    }
+   </style>
+   {% include "website/partials/footer.html" %}
+{% endblock content %}

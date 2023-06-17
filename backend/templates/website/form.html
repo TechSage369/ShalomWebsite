@@ -1,0 +1,720 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact-us</title>
+        <link rel="stylesheet" href="{% static 'css/formstyle.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <table class="center">
+                <center>
+                    <h1>STUDENTS ADMISSION FORM FOR THE SESSION 2023</h1>
+                </center>
+                <tr class="firsttr">
+                    <th>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="logo.jpg" alt="logo"style="height: 200px;width:auto">
+                        </div>
+                        <div style="display: flex; justify-content: center;padding-bottom:10px;">
+                            FORM NO. :
+                            <input type="number">
+                        </div>
+                    </th>
+                    <td style="display: flex;
+                               justify-content: center;
+                               flex-flow: column;
+                               border-style: none">
+                        <div class="sc-info" style="font-size:2rem;">SHALOM ENGLISH SCHOOL</div>
+                        <div class="sc-info">Chotta Hatta, PO:Bansbotay</div>
+                        <div class="sc-info">Darjeelig</div>
+                        <div class="sc-info">
+                            Email:<a href="#">shalomenglishschool2010@gmail.com<a>
+                        </div>
+                        <div class="sc-info">
+                            Contact: <b> 8637332128</b>/<b>6296153008</b>/ <b> 8250398245</b>
+                        </div>
+                    </td>
+                    <td class="photo">
+                        <div style="display: flex; justify-content: center;">
+                            <form action="#">
+                                Upload:
+                                <input type="file">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="padding-left:10px">Status :Minority School</th>
+                    <th style="padding-left:10px">U-DISE CODE:19012902203</th>
+                    <th style="padding-left:10px">
+                        Admission Date:
+                        <input type="date">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Type of admission: NEW
+                        <input type="radio" name="option">
+                        RE-ADMISSION
+                        <input type="radio" name="option">
+                        TRANSITION
+                        <input type="radio" name="option">
+                    </th>
+                    <th>
+                        Admission number:
+                        <input type="number">
+                    </th>
+                </tr>
+            </table>
+            <!-- ----------------------------------------------------------------------------------------------------- -->
+            <tr>
+                <div class="zero">
+                    <p colspan="3"></p>
+                    Please read the following instruction carefully before filling admisssion form.
+                </td>
+                <p colspan="3">1.Use CAPITAL letters only</p>
+                <p colspan="3">
+                    2.Tick
+                    <input type="checkbox">
+                    where applicable and strike-off(e.g Male/Female) whichever no applicable
+                </p>
+                <p colspan="3">3.Field mark with * are mandatory</p>
+            </div>
+        </tr>
+    </div>
+    <div class="container">
+        <table class="table">
+            <div class="one">
+                <b>1. Student Information</b>
+            </div>
+            <tr>
+                <td colspan="3">
+                    Class of admission:
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *Name(as on Aadhar):Master/Miss
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *Date of Birth:
+                    <input type="date" required>
+                </td>
+                <td colspan="2">
+                    *Gender:Girl
+                    <input type="radio" name="gender">
+                    /Boy
+                    <input type="radio" name="gender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *Place of birth:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *Country:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *Status:
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *District:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *Block:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *City/Village:
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *Nationality:
+                    <input type="text" required>
+                </td>
+                <td colspan="2">
+                    *WhatsApp Mobile No of Parents:
+                    <input type="text" name="country code" value="+91" size="2">
+                    <input type="tel"
+                           name="phone"
+                           size="10"
+                           pattern="[0-9] {4}-[0-9]{6}"
+                           placeholder="1234-567890"
+                           required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Aadhar No:
+                    <input type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *student belongs to "Below Poverty Line"(BPL) Family? YES
+                    <input type="radio" name="yes">
+                    NO
+                    <input type="radio" name="no">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    If YES then BPL cERTIFICATE No.:
+                    <input type="number" required>
+                </td>
+                <td>
+                    Issuing Authority:
+                    <input type="text" required>
+                </td>
+                <td>
+                    Issued Date:
+                    <input type="date" required>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <table class="table">
+            <div class="one">
+                <b>2.Parent/Guardian Information</b>
+            </div>
+            <tr>
+                <th colspan="3">
+                    *Father's Name (as on Aadhaar):
+                    <input type="text" required>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    *Father's Mobile No:
+                    <input type="text" name="country code" value="+91" size="2">
+                    <input type="tel"
+                           name="phone"
+                           size="10"
+                           pattern="[0-9] {4}-[0-9]{6}"
+                           placeholder="1234-567890"
+                           required>
+                </td>
+                <td>*Father's Aadhaar No:</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *Father's Occupation:Agriculture Farmer
+                    <input type="radio" name="fathers occupation">
+                    ,Laborer
+                    <input type="radio" name="fathers occupation">
+                    ,self-Employed
+                    <input type="radio" name="fathers occupation">
+                    ,
+                    Private Job
+                    <input type="radio" name="fathers occupation">
+                    ,Govt.Employee
+                    <input type="radio" name="fathers occupation">
+                    ,Military Personnel
+                    <input type="radio" name="fathers occupation">
+                    ,
+                    Other please mention:
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Email ID:
+                    <input type="email" placeholder="enter.email" required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3">
+                    *Mother's Name(as on Aadhaar):
+                    <input type="text" required>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    *Mother's Mobile No:
+                    <input type="text" name="country code" value="+91" size="2">
+                    <input type="tel"
+                           name="phone"
+                           size="10"
+                           pattern="[0-9] {4}-[0-9]{6}"
+                           placeholder="1234-567890"
+                           required>
+                </td>
+                <td>
+                    *Mother's Aadhaar No:
+                    <input type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Mother's Occupation:Agriculture Farmer
+                    <input type="radio" name="mothers occupation">
+                    ,Laborer
+                    <input type="radio" name="mothers occupation">
+                    ,self-Employed
+                    <input type="radio" name="mothers occupation">
+                    ,Private
+                    Job
+                    <input type="radio" name="mothers occupation">
+                    ,
+                    Govt.Employee
+                    <input type="radio" name="mothers occupation">
+                    ,Military Personnel
+                    <input type="radio" name="mothers occupation">
+                    ,Other please mention
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3">
+                    Parents Annual Income:(Rs)
+                    <input type="number" required>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <table class="table">
+            <div class="one">
+                <p>
+                    <b>3.Information of Sibling studying in the school</b>
+                </p>
+                <p>(Mandatory if student has siblings, mention details of sibling)</p>
+            </div>
+            <tr>
+                <td>
+                    i.Name:
+                    <input type="text" required>
+                </td>
+                <td>
+                    Class studying:
+                    <input type="number" required>
+                </td>
+                <td>
+                    Relation:Brother
+                    <input type="radio" name="brother">
+                    Sister
+                    <input type="radio" name="brother">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ii. Name:
+                    <input type="text" required>
+                </td>
+                <td>
+                    Class Studying:
+                    <input type="number" required>
+                </td>
+                <td>
+                    Relation:Brother
+                    <input type="radio" name="brother">
+                    Sister
+                    <input type="radio" name="brother">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    iii. Name:
+                    <input type="text" required>
+                </td>
+                <td>
+                    class studying:
+                    <input type="number" required>
+                </td>
+                <td>
+                    Relation: Brother
+                    <input type="radio" name="brother">
+                    Sister
+                    <input type="radio" name="brother">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <table class="table">
+            <div class="one">
+                <b>4.Student's Address Information</b>
+            </div>
+            <tr>
+                <th colspan="3">Correspondence Address :</th>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *Distance from School (KMs):
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    City/Village/Town*:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *Block:
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *District:
+                    <input type="text" name="district" required>
+                </td>
+                <td>
+                    *State:
+                    <input type="text" name="state" required>
+                </td>
+                <td>
+                    *Country:
+                    <input type="text" name="country" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *Pin no.
+                    <input type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3">
+                    If "Permanent Address" same as Correspondence address?* YES
+                    <input type="radio" name="yes">
+                    NO
+                    <input type="radio" name="no">
+                    (If,YES no need to fill Permanent address)
+                </th>
+            </tr>
+            <tr>
+                <th colspan="3">Permanent Address:</th>
+            </tr>
+            <tr>
+                <td colspan="3">* Distance from school(KMs):</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    City/Village/Town*:
+                    <input type="text" required>
+                </td>
+                <td>
+                    *Block:
+                    <input type="text" name="block" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *District:
+                    <input type="text" name="district" required>
+                </td>
+                <td>
+                    *State:
+                    <input type="text" name="state" required>
+                </td>
+                <td>
+                    *country:
+                    <input type="text" name="country" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    *Pin No.:
+                    <input type="number" name="pin no.">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <table class="table">
+            <div class="one">
+                <b>5.Reservation Information</b>
+            </div>
+            <tr>
+                <td colspan="5">
+                    *Religion:<b>Hindu
+                    <input type="radio" name="religion">
+                    Christian
+                    <input type="radio" name="christian">
+                    Buddhist
+                    <input type="radio" name="religion">
+                    Muslim
+                    <input type="radio" name=" religion">
+                    Sikhs
+                    <input type="radio" name="religion">
+                    Jain
+                    <input type="radio" name="religion">
+                    Parsi
+                    <input type="radio" name="religion">
+                </b>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3">
+                General/ST/SC/OBC-A/OBC-B
+                <input type="text" name="cast" required>
+            </th>
+            <td colspan="2">
+                Cast(if reserved category):
+                <input type="text" name="cast" required>
+            </td>
+        </tr>
+        <tr>
+            <td>If Reserved Category- YES</td>
+            <td colspan="2">
+                Certificate No.:
+                <input type="number" name="no" required>
+            </td>
+            <td>
+                Issuing Authority:
+                <input type="text" name="authority" required>
+            </td>
+            <td>
+                Issued Date:
+                <input type="date" name="date" required>
+            </td>
+        </tr>
+        <tr rowspan="2">
+            <td>
+                Physiclly Handicapped?
+                <br>
+                YES
+                <input type="radio" name="yes">
+                NO
+                <input type="radio" name="yes">
+                <br>
+                If YES, put a tick in the option
+            </td>
+            <td>
+                Low-vision
+                <input type="radio" name="disability">
+            </td>
+            <td>
+                Hearing Disability
+                <input type="radio" name="disability" required>
+            </td>
+            <td>
+                Speech Disability
+                <input type="radio" name="disability" required>
+            </td>
+            <td>
+                Loco motor Disability
+                <input type="radio" name="disability" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Percentage(%)-></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="5">
+                Medium of Instruction:English
+                <input type="radio" name="medium" required>
+                Nepali
+                <input type="radio" name="medium" required>
+                Hindi
+                <input type="radio" name="medium" required>
+                Bengali
+                <input type="radio" name="medium" required>
+            </th>
+        </tr>
+    </table>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <table class="table">
+        <div class="one">
+            <b>6.Previous School Information</b>
+            <p>(To be filled by NEW admitted, transferred/TRANSITION Student only)</p>
+        </div>
+        <tr>
+            <td colspan="2">Name of previous school:</td>
+        </tr>
+        <tr>
+            <td>School Code(if Any):</td>
+            <td>Last Class attended:</td>
+        </tr>
+        <tr>
+            <td>
+                Date of Leaving:
+                <input type="date" name="date" required>
+                <br>
+                <b>(Transfer Certificate and character certificate mandatory)</b>
+            </td>
+            <td>%of Marks/Grade obtained:</td>
+        </tr>
+    </table>
+</div>
+<div class="container">
+    <table class="table">
+        <div class="one">
+            <b>7.Student's Bank Account Information (Mandatory if student already has a bank account)</b>
+        </div>
+        <tr>
+            <td colspan="2">Acccount Holder Name/Joint Account Holder Name:</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Relation of Joint Account with Student:Mother/Father/Brother/Sister/Grand-Father/Grand-Father/Aunt/Uncle
+            </td>
+        </tr>
+        <tr>
+            <td>
+                A/C No.:
+                <input type="number" name="bank" required>
+            </td>
+            <td>
+                IFSC CODE:
+                <input type="number" name="bank" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Bank Name:</td>
+            <td>Branch Name and Code:</td>
+        </tr>
+    </table>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <table class="table">
+        <div class="one">
+            <b>8.Other Information</b>
+        </div>
+        <tr>
+            <td colspan="2">Student's Hobbies:</td>
+        </tr>
+        <tr>
+            <td>Student's Past achivements (Sports/Scholarship):</td>
+        </tr>
+    </table>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <table class="table">
+        <div class="one">
+            <b>9.Declaration by the Parents/Guardian </b>
+        </div>
+        <tr>
+            <td colspan="2" style="padding: 15px;">
+                I hereby declare that all the information given here is true. I take full resoponsibility of my child to
+                behave sinceraly.We will abide by all the rules and regulation of the school.
+                Please admit my child in class..................
+                <div style="display: flex;
+                            justify-content: space-between;
+                            margin-top: 10px">
+                    <div>
+                        Place:
+                        <input type="text" name="place" required>
+                    </div>
+                    <div>
+                        Sinature of Parents/Guardian:
+                        <input type="file" name="sign" required>
+                    </div>
+                </div>
+                <div style="margin-top: 5px;">
+                    Date:
+                    <input type="date" style="margin-left: 2px;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Attached Documents and Cirtificates</th>
+        </tr>
+        <tr>
+            <td>
+                1.Birth Certificate:
+                <input type="file" name="certificate" required>
+            </td>
+            <td>
+                6.Front page of Bank Passbook:
+                <input type="file" name="certificate" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.Cast Cirtificate (ST/SC/OBC-A/OBC-B):
+                <input type="file" name="certificate" required>
+            </td>
+            <td>
+                7.BLP Cirtificate:
+                <input type="file" name="certificate" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3.Previous School's transfer & character cirtificate:
+                <input type="file" name="certificate" required>
+            </td>
+            <td>
+                8.Physically handicapped Certificate:
+                <input type="file" name="certificate" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4.Previous school marksheet:
+                <input type="file" name="certificate" required>
+            </td>
+            <td>
+                9.Past achievement Certificate:
+                <input type="file" name="certificate" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5.Student's Aadhar Card:
+                <input type="file" name="certificate" required>
+            </td>
+            <td>
+                10.Any other relevant certificate:
+                <input type="file" name="certificate" required>
+            </td>
+        </tr>
+    </table>
+    (<b>Note:</b>Parents/Guardian/Students may retain photocopy of completely filled in admission form for future reference)
+</div>
+<br>
+<hr>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <table class="table">
+        <div class="one">
+            <b>For office use only</b>
+        </div>
+        <tr>
+            <td colspan="3">
+                <b>Admission granted to admit in class:</b>
+            </td>
+        </tr>
+        <tr>
+            <td height="100px">
+                <b>Signature of Coordinator</b>
+            </td>
+            <td>
+                <b>Signature of Director</b>
+            </td>
+            <td>
+                <b>Signature if Head of Institution</b>
+            </td>
+        </tr>
+    </div>
+</table>
+</div>
+</body>
+</html>
