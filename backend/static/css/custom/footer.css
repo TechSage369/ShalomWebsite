@@ -1,5 +1,6 @@
 /* CSS for footer */
 .sc-footer {
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -39,7 +40,10 @@
     text-align: center;
     color: #fff;
     }
-    
+    .sc-cnt>ul>a {
+        color: #fff;
+        text-decoration: none;
+    }
     /* Media queries */
     @media (min-width: 768px) {
     .sc-footer {
