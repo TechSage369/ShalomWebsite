@@ -1,11 +1,17 @@
+
+{% extends 'website/base.html' %}
+
+
+{% block title %}
+    Admission Form
+{% endblock title %}
+
+{% block header %}
+    {% include 'website/partials/navbar.html' %}
+{% endblock header %}
+
+{% block content %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>contact-us</title>
-        <link rel="stylesheet" href="{% static 'css/formstyle.css' %}">
-    </head>
-    <body>
         <div class="container">
             <table class="center">
                 <center>
@@ -14,7 +20,7 @@
                 <tr class="firsttr">
                     <th>
                         <div style="display: flex; justify-content: center;">
-                            <img src="logo.jpg" alt="logo"style="height: 200px;width:auto">
+                            <img src="{% static 'imgs/shalom-logo.png' %}" alt="logo"style="height: 200px;width:auto">
                         </div>
                         <div style="display: flex; justify-content: center;padding-bottom:10px;">
                             FORM NO. :
@@ -716,5 +722,5 @@
     </div>
 </table>
 </div>
-</body>
-</html>
+{% include 'website/partials/footer.html' %}
+{% endblock content %}

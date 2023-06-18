@@ -1,0 +1,70 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}
+Student Activities Corner
+{% endblock title %}
+
+{% block header %}
+    {% include 'website/partials/navbar.html' %}
+{% endblock header %}
+
+{% block content %}
+        <div class="container">
+            <h1 class="my-4">Students Activities Corner</h1>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/1.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/2.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/3.jpeg' %}"
+                         alt="">
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/4.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/5.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/6.jpeg' %}"
+                         alt="">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/7.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activities/8.jpeg' %}"
+                         alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid rounded"
+                         src="{% static 'imgs/gallery/school-activites/9.jpeg' %}"
+                         alt="">
+                </div>
+            </div>
+            <a href="{% url 'website:gallery_sports_day' %}" class="btn btn-warning my-4 px-1 py-2">Next Sports Day</a>
+        </div>
+
+
+    {% include 'website/partials/footer.html' %}
+{% endblock content %}
