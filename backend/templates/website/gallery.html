@@ -7,23 +7,47 @@
     {% include 'website/partials/navbar.html' %}
 {% endblock header %}
 {% block content %}
-    <nav class="nav">
-        <a class="nav-link active ms-auto" aria-current="page" href="#">Main Gallery</a>
-        <a class="nav-link" href="#">Student Gallery</a>
-    </nav>
-    <style>
-    nav > .active{
-        text-decoration: underline;
-        background: #333;
-        color: #fff;
-    }
-    nav > .active: hover{
-        color: #ff8
-    }
-    </style>
     <div class="container">
         <h1 class="my-3">Gallery</h1>
         <div class="row my-4">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'imgs/gallery/teachers-day.jpeg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'website:gallery_teachers_day' %}" class="link">Teachers Day</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'imgs/gallery/childrens-day.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'website:gallery_childrens_day' %}" class="link">Childrens Day</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'imgs/gallery/school-activities.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'website:gallery_school_activities' %}" class="link">School Activities</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'imgs/gallery/sports-day.jpeg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'website:gallery_sports_day' %}" class="link">Sports Day</a></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% include 'website/partials/footer.html' %}
+{% endblock content %}
+        {% comment %} <div class="row my-4">
             <div class="col-md-4">
                 <img class="img-fluid rounded"
                      src="{% static 'imgs/gallery/1.jpg' %}"
@@ -73,7 +97,5 @@
                      src="{% static 'imgs/gallery/9.JPG' %}"
                      alt="">
             </div>
-        </div>
-    </div>
-    {% include 'website/partials/footer.html' %}
-{% endblock content %}
+        </div> {% endcomment %}
+

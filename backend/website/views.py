@@ -65,3 +65,62 @@ def rules_and_regulations_view(request):
 
 def administration_view(request):
     return render(request, 'website/administration.html')
+
+
+'''
+teachers day
+childrens day
+investiture ceremony
+environment day
+
+sports day
+independence day
+school activities
+christmas day
+'''
+
+
+def gallery_details_view(request):
+    return render(request, 'website/gallery-details-view.html')
+
+
+def gallery_teachers_day_view(request):
+    return render(request, 'website/gallery-teachers-day.html')
+
+
+def gallery_childrens_day_view(request):
+    return render(request, 'website/gallery-childrens-day.html')
+
+
+def gallery_investiture_ceremony_view(request):
+    return render(request, 'website/gallery-investiture-ceremony.html')
+
+
+def gallery_environment_day_view(request):
+    return render(request, 'website/gallery-environment-day.html')
+
+
+def gallery_sports_day_view(request):
+    return render(request, 'website/gallery-sports-day.html')
+
+
+def gallery_independence_day_view(request):
+    return render(request, 'website/gallery-independence-day.html')
+
+
+def gallery_school_activities_view(request):
+    return render(request, 'website/gallery-students-activities.html')
+
+
+def gallery_christmas_day_view(request):
+    return render(request, 'website/gallery-christmas-day.html')
+
+
+
+
+
+
+
+
+
+
